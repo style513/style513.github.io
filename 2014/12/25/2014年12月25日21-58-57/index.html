@@ -3,15 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>style</title>
+  <title>ReactiveCocoa上手测试 | style</title>
   <meta name="author" content="zhengyj">
   
-  <meta name="description" content="Title: ReactiveCocoaDate: 2014-12-25 15:25:06Modified: 2014-12-25 15:25:16Category: Objective-CTags: Objective-C,ReactiveCocoaSlug: my-super2-postAuth">
+  <meta name="description" content="场景一
+比如有一个属性为 username 的字符串，我需要随时监听 username 字符的变化，可以如下：
+123[RACObserve(self, username) subscribeNext:^(id x) {    NSLog(@&quot;username:%@&quot;,self.username);">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="ReactiveCocoa上手测试"/>
   <meta property="og:site_name" content="style"/>
 
   
@@ -50,18 +52,17 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2014-12-25T13:59:32.000Z"><a href="/2014/12/25/2014年12月25日21-58-57/">12月 25 2014</a></time>
+        <time datetime="2014-12-25T01:05:21.000Z"><a href="/2014/12/25/2014年12月25日21-58-57/">12月 25 2014</a></time>
       
       
   
-    <h1 class="title"></h1>
+    <h1 class="title">ReactiveCocoa上手测试</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>Title: ReactiveCocoa<br>Date: 2014-12-25 15:25:06<br>Modified: 2014-12-25 15:25:16<br>Category: Objective-C<br>Tags: Objective-C,ReactiveCocoa<br>Slug: my-super2-post<br>Author: zhengyj<br>Summary: Short version for index and feeds</p>
-<h5 id="场景一">场景一</h5>
+        <h5 id="场景一">场景一</h5>
 <p>比如有一个属性为 username 的字符串，我需要随时监听 username 字符的变化，可以如下：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[RACObserve(<span class="keyword">self</span>, username) subscribeNext:^(<span class="keyword">id</span> x) {</div><div class="line">    <span class="built_in">NSLog</span>(<span class="string">@"username:%@"</span>,<span class="keyword">self</span><span class="variable">.username</span>);</div><div class="line">}];</div></pre></td></tr></table></figure>
 
@@ -112,7 +113,7 @@
 
 <section id="comment">
 <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key=2014/12/25/2014年12月25日21-58-57/ data-title= data-url= http://style513.github.io/2014/12/25/2014年12月25日21-58-57/来></div>
+	<div class="ds-thread" data-thread-key=2014/12/25/2014年12月25日21-58-57/ data-title=ReactiveCocoa上手测试 data-url= http://style513.github.io/2014/12/25/2014年12月25日21-58-57/来></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">

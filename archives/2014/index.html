@@ -53,31 +53,29 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2014-12-25T13:59:32.000Z"><a href="/2014/12/25/2014年12月25日21-58-57/">12月 25 2014</a></time>
+        <time datetime="2014-12-25T14:09:17.000Z"><a href="/2014/12/25/ReactiveCocoa上手测试/">12月 25 2014</a></time>
       
       
   
-    <h1 class="title"><a href="/2014/12/25/2014年12月25日21-58-57/"></a></h1>
+    <h1 class="title"><a href="/2014/12/25/ReactiveCocoa上手测试/"></a></h1>
   
 
     </header>
     <div class="entry">
       
-        <p>Title: ReactiveCocoa<br>Date: 2014-12-25 15:25:06<br>Modified: 2014-12-25 15:25:16<br>Category: Objective-C<br>Tags: Objective-C,ReactiveCocoa<br>Slug: my-super2-post<br>Author: zhengyj<br>Summary: Short version for index and feeds</p>
+        <p>title: ReactiveCocoa上手测试<br>date: 2014-12-25 09:05:21<br>tags:</p>
+<ul>
+<li>iOS<br>categories:编程</li>
+</ul>
+<hr>
 <h5 id="场景一">场景一</h5>
 <p>比如有一个属性为 username 的字符串，我需要随时监听 username 字符的变化，可以如下：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[RACObserve(<span class="keyword">self</span>, username) subscribeNext:^(<span class="keyword">id</span> x) {</div><div class="line">    <span class="built_in">NSLog</span>(<span class="string">@"username:%@"</span>,<span class="keyword">self</span><span class="variable">.username</span>);</div><div class="line">}];</div></pre></td></tr></table></figure>
 
 <h6 id="场景二">场景二</h6>
 <p>现在比如有一个登陆界面，界面上有如下属性：</p>
-<p>.. code-block:: identifier<br>    :classprefix: pgcss<br>    :linenos: table<br>    :linenostart: 153</p>
-<pre><code><span class="comment">///用户名输入框</span>
-<span class="keyword">@property</span> (<span class="keyword">strong</span>, <span class="keyword">nonatomic</span>) UITextField *usernameTextField;
-<span class="comment">///密码输入框</span>
-<span class="keyword">@property</span> (<span class="keyword">strong</span>, <span class="keyword">nonatomic</span>) UITextField *passwordTextField;
-<span class="comment">///登陆按钮</span>
-<span class="keyword">@property</span> (<span class="keyword">strong</span>, <span class="keyword">nonatomic</span>) <span class="built_in">UIButton</span> *loginButton;
-</code></pre>
+<figure class="highlight PHP"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">///用户名输入框</span></div><div class="line">@property (strong, nonatomic) UITextField *usernameTextField;</div><div class="line"><span class="comment">///密码输入框</span></div><div class="line">@property (strong, nonatomic) UITextField *passwordTextField;</div><div class="line"><span class="comment">///登陆按钮</span></div><div class="line">@property (strong, nonatomic) UIButton *loginButton;</div></pre></td></tr></table></figure>
+
       
     </div>
     <footer>
@@ -103,11 +101,11 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2014-12-25T01:05:21.000Z"><a href="/2014/12/25/ReactiveCocoa上手测试/">12月 25 2014</a></time>
+        <time datetime="2014-12-25T01:05:21.000Z"><a href="/2014/12/25/2014年12月25日21-58-57/">12月 25 2014</a></time>
       
       
   
-    <h1 class="title"><a href="/2014/12/25/ReactiveCocoa上手测试/">ReactiveCocoa上手测试</a></h1>
+    <h1 class="title"><a href="/2014/12/25/2014年12月25日21-58-57/">ReactiveCocoa上手测试</a></h1>
   
 
     </header>
@@ -119,8 +117,14 @@
 
 <h6 id="场景二">场景二</h6>
 <p>现在比如有一个登陆界面，界面上有如下属性：</p>
-<figure class="highlight PHP"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">///用户名输入框</span></div><div class="line">@property (strong, nonatomic) UITextField *usernameTextField;</div><div class="line"><span class="comment">///密码输入框</span></div><div class="line">@property (strong, nonatomic) UITextField *passwordTextField;</div><div class="line"><span class="comment">///登陆按钮</span></div><div class="line">@property (strong, nonatomic) UIButton *loginButton;</div></pre></td></tr></table></figure>
-
+<p>.. code-block:: identifier<br>    :classprefix: pgcss<br>    :linenos: table<br>    :linenostart: 153</p>
+<pre><code><span class="comment">///用户名输入框</span>
+<span class="keyword">@property</span> (<span class="keyword">strong</span>, <span class="keyword">nonatomic</span>) UITextField *usernameTextField;
+<span class="comment">///密码输入框</span>
+<span class="keyword">@property</span> (<span class="keyword">strong</span>, <span class="keyword">nonatomic</span>) UITextField *passwordTextField;
+<span class="comment">///登陆按钮</span>
+<span class="keyword">@property</span> (<span class="keyword">strong</span>, <span class="keyword">nonatomic</span>) <span class="built_in">UIButton</span> *loginButton;
+</code></pre>
       
     </div>
     <footer>
