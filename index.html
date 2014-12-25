@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>style</title>
+  <meta name="author" content="zhengyj">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="style"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="style" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">style</a></h1>
+  <h2><a href="/">一步一步来</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-25T13:59:32.000Z"><a href="/2014/12/25/2014年12月25日21-58-57/">12月 25 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/25/2014年12月25日21-58-57/"></a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Title: ReactiveCocoa<br>Date: 2014-12-25 15:25:06<br>Modified: 2014-12-25 15:25:16<br>Category: Objective-C<br>Tags: Objective-C,ReactiveCocoa<br>Slug: my-super2-post<br>Author: zhengyj<br>Summary: Short version for index and feeds</p>
+<h5 id="场景一">场景一</h5>
+<p>比如有一个属性为 username 的字符串，我需要随时监听 username 字符的变化，可以如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[RACObserve(<span class="keyword">self</span>, username) subscribeNext:^(<span class="keyword">id</span> x) {</div><div class="line">    <span class="built_in">NSLog</span>(<span class="string">@"username:%@"</span>,<span class="keyword">self</span><span class="variable">.username</span>);</div><div class="line">}];</div></pre></td></tr></table></figure>
+
+<h6 id="场景二">场景二</h6>
+<p>现在比如有一个登陆界面，界面上有如下属性：</p>
+<p>.. code-block:: identifier<br>    :classprefix: pgcss<br>    :linenos: table<br>    :linenostart: 153</p>
+<pre><code><span class="comment">///用户名输入框</span>
+<span class="keyword">@property</span> (<span class="keyword">strong</span>, <span class="keyword">nonatomic</span>) UITextField *usernameTextField;
+<span class="comment">///密码输入框</span>
+<span class="keyword">@property</span> (<span class="keyword">strong</span>, <span class="keyword">nonatomic</span>) UITextField *passwordTextField;
+<span class="comment">///登陆按钮</span>
+<span class="keyword">@property</span> (<span class="keyword">strong</span>, <span class="keyword">nonatomic</span>) <span class="built_in">UIButton</span> *loginButton;
+</code></pre>
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-25T01:05:21.000Z"><a href="/2014/12/25/ReactiveCocoa上手测试/">12月 25 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/25/ReactiveCocoa上手测试/">ReactiveCocoa上手测试</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h5 id="场景一">场景一</h5>
+<p>比如有一个属性为 username 的字符串，我需要随时监听 username 字符的变化，可以如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[RACObserve(<span class="keyword">self</span>, username) subscribeNext:^(<span class="keyword">id</span> x) {</div><div class="line">    <span class="built_in">NSLog</span>(<span class="string">@"username:%@"</span>,<span class="keyword">self</span><span class="variable">.username</span>);</div><div class="line">}];</div></pre></td></tr></table></figure>
+
+<h6 id="场景二">场景二</h6>
+<p>现在比如有一个登陆界面，界面上有如下属性：</p>
+<figure class="highlight PHP"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">///用户名输入框</span></div><div class="line">@property (strong, nonatomic) UITextField *usernameTextField;</div><div class="line"><span class="comment">///密码输入框</span></div><div class="line">@property (strong, nonatomic) UITextField *passwordTextField;</div><div class="line"><span class="comment">///登陆按钮</span></div><div class="line">@property (strong, nonatomic) UIButton *loginButton;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-24T11:15:20.000Z"><a href="/2014/12/24/pod-记录/">12月 24 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/24/pod-记录/">pod 记录</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h4 id="在一个项目下：">在一个项目下：</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pod init</div></pre></td></tr></table></figure>
+
+<h4 id="生成了Podfile文件">生成了Podfile文件</h4>
+<p>编辑Pofile文件（安装AFNetworking）：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">platform <span class="symbol">:ios</span>, <span class="string">'6.0'</span></div><div class="line">pod <span class="string">'AFNetworking'</span></div></pre></td></tr></table></figure>
+
+<h4 id="最后">最后</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pod install</div></pre></td></tr></table></figure>
+
+<h4 id="记住要打开的是_*-xcworkspace_，而不是_*-xcodeproj">记住要打开的是 *.xcworkspace ，而不是 *.xcodeproj</h4>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-23T09:57:30.000Z"><a href="/2014/12/23/my-new-post/">12月 23 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/23/my-new-post/">my new post</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>测试文章</p>
+<figure class="highlight language"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">code</span> snippet</div></pre></td></tr></table></figure>
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">my</span> code here...</div><div class="line"><span class="keyword">my</span> code <span class="keyword">continue</span>...</div><div class="line"><span class="keyword">my</span> code <span class="keyword">end</span>...</div></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">my code here...  </div><div class="line">my code <span class="keyword">continue</span>...</div><div class="line">my code end...</div></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">import</span> os</div><div class="line"><span class="keyword">print</span> <span class="string">"hello, Python!"</span></div></pre></td></tr></table></figure>
+
+<figure class="highlight base"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">ls</span> -alh</div></pre></td></tr></table></figure>
+
+
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-12-23T09:17:30.000Z"><a href="/2014/12/23/hello-world/">12月 23 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/12/23/hello-world/">Hello World</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2>
+<h3 id="Create_a_new_post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+<nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav></div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:style513.github.io">
+  </form>
+</div>
+
+  
+
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 zhengyj
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+<script type="text/javascript">
+function addBlankTargetForLinks () {
+          $('a[href^="http"]').each(function(){
+                          $(this).attr('target', '_blank');
+                              });
+}
+
+$(document).bind('DOMNodeInserted', function(event) {
+            addBlankTargetForLinks();
+});
+</script>
+</script>
+
+
+</body>
+</html>
